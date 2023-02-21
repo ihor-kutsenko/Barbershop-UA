@@ -1,0 +1,280 @@
+:root {
+        --primary-font-family: "Open Sans", sans-serif;
+        --secondary-font-family: "Raleway", sans-serif;
+        --primary-text-color-dark-theme: #9da4bd;
+        --secondary-text-color-dark-theme: #ffffff;
+        --third-text-color-dark-theme: rgba(157, 164, 189, 0.6);
+        --primary-text-color-light-theme: #555555;
+        --secondary-text-color-light-theme: #303030;
+        --accent-color: #ff6c00;
+        --old-school-backgrond-color: #f7f7f7;
+}
+
+.list{
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--primary-font-family);
+}
+
+address{
+    font-style: normal;
+}
+/* ==================== COMPONENTS ==================== */
+
+.modal-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    /* color: #FFFFFF;  */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-dark-theme);
+}
+
+.btn-light-theme {
+    color: var(--secondary-text-color-light-theme);
+}
+
+.social-links-list-link {
+    
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    
+    color: var(--secondary-text-color-light-theme);
+}
+
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+    color: var(--accent-color);
+}
+
+.overtitle {
+        
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.overtitle-theme-dark {
+    color: var(--third-text-color-dark-theme);
+}
+
+.overtitle-theme-light {
+    color: var(--secondary-text-color-light-theme);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.description-theme-dark {
+    color: var(--primary-text-color-dark-theme)
+}
+
+.description-theme-light {
+    color: var(--primary-text-color-light-theme);
+}
+
+.title {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.title-theme-light {
+    color: var(--secondary-text-color-light-theme);
+}
+
+.title-theme-dark {
+    /* color: var(--secondary-text-color-dark-theme); */
+}
+
+/* ==================== START HEADER ==================== */
+
+.nav-list-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.nav-list-link:focus,
+.nav-list-link:hover {
+    color: var(--accent-color);
+}
+
+.contact-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    /* color: var(--secondary-text-color-dark-theme) */
+}
+
+.contact-number:focus,
+.contact-number:hover {
+    color: var(--accent-color);
+}
+/* ==================== /END HEADER ==================== */
+
+/* ==================== START HERO ==================== */
+
+.main-title {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    /* color: var(--secondary-text-color-dark-theme); */
+}
+/* ==================== /END HERO ==================== */
+
+/* ==================== START ABOUT  ==================== */
+
+.about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color-light-theme);
+}
+/* ==================== /END ABOUT  ==================== */
+
+/* ==================== START PRICES  ==================== */
+
+.prices-list-name,
+.prices-list-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color-dark-theme);
+}
+/* ==================== /END PRICES  ==================== */
+
+
+/* ==================== START ADVANTAGES  ==================== */
+
+.advantages-list-quantity {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--secondary-text-color-light-theme);
+}
+
+.advantages-list-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: var(--secondary-text-color-light-theme);
+}
+/* ==================== /END ADVANTAGES  ==================== */
+
+/* ==================== START EMPLOYEES  ==================== */
+
+.employees-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color:var(--secondary-text-color-light-theme);
+}
+
+.employees-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+
+/* ================== /END EMPLOYEES  ==================== */
+
+/* ==================== START GALLERY  ==================== */
+
+
+/* ==================== /END GALLERY  ==================== */
+
+
+/* ==================== START CONTACT ==================== */
+
+.contact-list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color:var(--primary-text-color-dark-theme);
+}
+
+.contact-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.contact-info-date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color-dark-theme);
+}
+/* ==================== /END CONTACT ==================== */
+
+/* ==================== START FOOTER ==================== */
+
+.copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--primary-text-color-dark-theme);
+}
