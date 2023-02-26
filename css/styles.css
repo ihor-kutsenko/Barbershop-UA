@@ -26,12 +26,52 @@ body {
     font-family: var(--primary-font-family);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 address{
     font-style: normal;
 }
 /* ==================== COMPONENTS ==================== */
 
 .modal-btn {
+    min-width: 160px;
+    padding: 10px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -68,6 +108,7 @@ address{
 }
 
 .overtitle {
+    margin-bottom: 20px;
         
     font-weight: 600;
     font-size: 11px;
@@ -108,16 +149,54 @@ address{
 }
 
 .title-theme-light {
+    margin-bottom: 20px;
+
     color: var(--secondary-text-color-light-theme);
 }
 
 .title-theme-dark {
+    margin-bottom: 44px;
+
     /* color: var(--secondary-text-color-dark-theme); */
 }
 
 /* ==================== START HEADER ==================== */
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.logo {
+    /* display: flex; */
+
+    margin-right: 70px;
+    /* align-items: center; */
+}
+
+.nav-list-item:not(:last-child){
+    margin-right: 40px;
+}
+
 .nav-list-link {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -132,6 +211,10 @@ address{
 }
 
 .contact-number {
+    margin-left: auto;
+    margin-right: 60px;
+    
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -208,7 +291,34 @@ address{
 
 /* ==================== START EMPLOYEES  ==================== */
 
+.employees-section {
+    background-color: var(--old-school-backgrond-color);
+}
+
+.employees-section .title {
+    margin-bottom: 44px;
+}
+
+.employees-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.employees-card {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+}
+
+.employees-container {
+    padding-top: 30px;
+}
+
 .employees-name {
+    margin-bottom: 8px;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;

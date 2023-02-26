@@ -11,33 +11,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!--START HEADER-->
     <header class="page-header">
-        <nav class="navigation">
-            <a class="logo link" href="./index.html">
-                <img class="logo-img" src="./images/logo.svg" alt="лого" width="68" height="56">
-            </a>
-            <ul class="nav-list list">
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#about">Про нас</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#prices">Послуги та ціни</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#masters">Майстри</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#contacts">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запис</button>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo link" href="./index.html">
+                    <img class="logo-img" src="./images/logo.svg" alt="лого" width="68" height="56">
+                </a>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#prices">Послуги та ціни</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#masters">Майстри</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="modal-btn" type="button">онлайн-запис</button>
+        </div>
     </header>
     <!-- /END HEADER -->
 
@@ -183,28 +188,52 @@
         <!-- START EMPLOYEES -->
 
         <section class="employees-section section" id="masters">
+         <div class="container">
             <p class="overtitle overtitle-theme-light">для справжніх шанувальників атмосфери</p>
             <h2 class="title title-theme-light">Наші майстри</h2>
             <ul class="employees-list list">
+
                 <li class="employees-card">
-                    <img class="employees-photo" src="./images/masters/master1.jpg" alt="майстер стриже клієнта"
-                        width="370" height="346">
-                    <h3 class="employees-name" lang="en">John Smith</h3>
-                    <p class="employees-position" lang="en">Extreme Barber</p>
+                    <img class="employees-photo" 
+                    src="./images/masters/master1.jpg" 
+                    alt="майстер стриже клієнта" 
+                    width="370"
+                    height="346">
+                    
+                    <div class="employees-container">
+                        <h3 class="employees-name" lang="en">John Smith</h3>
+                        <p class="employees-position" lang="en">Extreme Barber</p>
+                    </div>
+                </li>    
+                
+                
+                <li class="employees-card">
+                    <img class="employees-photo" 
+                    src="./images/masters/master2.jpg" 
+                    alt="майстер стриже клієнта" 
+                    width="370"
+                    height="346">
+                    
+                    <div class="employees-container">
+                        <h3 class="employees-name" lang="en">Michele Doe</h3>
+                        <p class="employees-position" lang="en">Extreme Barber</p>    
+                    </div>
                 </li>
+
                 <li class="employees-card">
-                    <img class="employees-photo" src="./images/masters/master2.jpg" alt="майстер стриже клієнта"
-                        width="370" height="346">
-                    <h3 class="employees-name" lang="en">Michele Doe</h3>
-                    <p class="employees-position" lang="en">Extreme Barber</p>
-                </li>
-                <li class="employees-card">
-                    <img class="employees-photo" src="./images/masters/master3.jpg" alt="майстер стриже клієнта"
-                        width="370" height="346">
-                    <h3 class="employees-name" lang="en">Alan Black</h3>
-                    <p class="employees-position" lang="en">Extreme Barber</p>
+                    <img class="employees-photo"
+                    src="./images/masters/master3.jpg" 
+                    alt="майстер стриже клієнта"
+                    width="370"
+                    height="346">
+                    
+                    <div class="employees-container">
+                        <h3 class="employees-name" lang="en">Alan Black</h3>
+                        <p class="employees-position" lang="en">Extreme Barber</p>
+                    </div>
                 </li>
             </ul>
+         </div>
         </section>
         <!-- /END EMPLOYEES -->
 
