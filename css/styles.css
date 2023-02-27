@@ -126,6 +126,7 @@ address{
 }
 
 .description {
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
@@ -231,7 +232,24 @@ address{
 
 /* ==================== START HERO ==================== */
 
+.hero-container {
+    display: flex;
+}
+
+.hero-left-side {
+    width: 100px;
+}
+
+.hero-right-side {
+    flex-grow: 1;
+    padding-top: 272px;
+    padding-bottom: 206px;
+    padding-left: 100px;
+}
+
 .main-title {
+    margin-bottom: 20px;
+
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 72px;
@@ -243,7 +261,33 @@ address{
 
 /* ==================== START ABOUT  ==================== */
 
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left-side,
+.about-right-side {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.about-right-side {
+    padding-left: 34px;
+}
+
+.about-gallery-list {
+    display: flex;
+    justify-content: space-between;
+}
+.about-section-description {
+    margin-bottom: 20px;
+    width: 400px;
+}
+
 .about-text {
+    margin-bottom: 40px;
+    width: 410px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.86;
@@ -254,6 +298,34 @@ address{
 /* ==================== /END ABOUT  ==================== */
 
 /* ==================== START PRICES  ==================== */
+
+.prices .overtitle-theme-dark {
+    margin-bottom: 20px;
+}
+
+.prices-container{
+    display: flex;
+}
+
+.prices-list {
+    flex-basis: 50%;
+    padding: 30px 40px;
+    margin-bottom: 50px;
+}
+
+.prices-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.prices .modal-btn {
+    display: block;
+    margin: 0 auto;
+}
 
 .prices-list-name,
 .prices-list-price {
