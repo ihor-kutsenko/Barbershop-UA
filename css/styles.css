@@ -341,7 +341,27 @@ address{
 
 /* ==================== START ADVANTAGES  ==================== */
 
+.advantages-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-right-side,
+.advantages-left-side {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 370px;
+    margin: 0 auto;
+}
 .advantages-list-quantity {
+    margin-bottom: 6px;
+
     font-weight: 700;
     font-size: 42px;
     line-height: 1.36;
@@ -359,6 +379,25 @@ address{
 
     color: var(--secondary-text-color-light-theme);
 }
+
+.advantages-list-item {
+    padding: 21px;
+
+    
+    width: 170px;
+    min-height: 133px;
+    background-color: var(--old-school-backgrond-color);
+}
+
+.advantages-list-item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.advantages-description,
+.advantages-right-side .title {
+    max-width: 460px;
+}
+
 /* ==================== /END ADVANTAGES  ==================== */
 
 /* ==================== START EMPLOYEES  ==================== */
@@ -415,11 +454,44 @@ address{
 
 /* ==================== START GALLERY  ==================== */
 
+.gallery .overtitle-theme-light {
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.gallery-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+}
 
 /* ==================== /END GALLERY  ==================== */
 
 
 /* ==================== START CONTACT ==================== */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.contact-info-section .title-theme-dark {
+    margin-bottom: 40px;
+}
+
+.contact-info-section {
+    padding-left: 100px;
+}
+
+.contact-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
 
 .contact-list-link {
     font-weight: 400;
@@ -440,6 +512,10 @@ address{
     /* color: var(--secondary-text-color-dark-theme); */
 }
 
+.contact-info-section .contact-text {
+    margin: 70px auto 20px;
+}
+
 .contact-info-date {
     font-weight: 400;
     font-size: 18px;
@@ -451,6 +527,25 @@ address{
 /* ==================== /END CONTACT ==================== */
 
 /* ==================== START FOOTER ==================== */
+
+.footer {
+    padding: 56px 55px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container .social-links-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-container .social-links-list-item:not(:last-child) {
+    margin-right: 40px;
+}
 
 .copyright {
     font-weight: 600;
