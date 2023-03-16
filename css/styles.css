@@ -80,6 +80,8 @@ address{
     text-transform: uppercase;
 
     color: #FFFFFF; 
+
+    transition: color 250ms linear, background-color 250ms linear;;
 }
 
 .modal-btn:hover,
@@ -96,6 +98,7 @@ address{
     display: flex;
     align-items: center;
 }
+
 
 .social-links-list::before {
     display: block;
@@ -120,6 +123,8 @@ address{
     letter-spacing: 0.2em;
     
     color: var(--secondary-text-color-light-theme);
+
+    transition: color 250ms linear;
 }
 
 .social-links-list-link:hover,
@@ -218,6 +223,9 @@ address{
 }
 
 .page-header {
+    position: absolute;
+    width: 100%;
+
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -242,12 +250,15 @@ address{
     line-height: 1.33;
     letter-spacing: 0.1em;
 
-    /* color: var(--secondary-text-color-dark-theme); */
+    color: var(--secondary-text-color-dark-theme);
+
+    transition: color 50ms linear ;
 }
 
 .nav-list-link:focus,
 .nav-list-link:hover {
     color: var(--accent-color);
+    
 }
 
 .contact-number {
@@ -260,7 +271,9 @@ address{
     line-height: 1.33;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    /* color: var(--secondary-text-color-dark-theme) */
+    color: var(--secondary-text-color-dark-theme);
+
+    transition: color 250ms linear;
 }
 
 .contact-number:focus,
@@ -276,7 +289,18 @@ address{
 }
 
 .hero-left-side {
+    display: flex;
+    align-items: flex-end;
+
+    padding-left: 26px;
+    padding-bottom: 40px;
+
     width: 100px;
+}
+
+.social-links-list-hero {
+    transform: rotate(-90deg);
+    transform-origin: left top;
 }
 
 .hero-right-side {
@@ -530,6 +554,8 @@ address{
     width: 44px;
     height: 44px;
     background-color: var(--secondary-text-color-dark-theme);
+
+    transition: background-color 250ms linear;
 }
 
 .social-list-link:hover,
@@ -539,6 +565,7 @@ address{
 
 .social-list-icon {
     fill: var(--secondary-text-color-light-theme);
+    transition: fill 250ms linear;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -669,4 +696,72 @@ address{
     letter-spacing: 0.2em;
 
     color: var(--primary-text-color-dark-theme);
+}
+
+/* ==================== /END FOOTER ==================== */
+
+/* ==================== START BACKDROP ==================== */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 250ms linear;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 580px;
+    background-color: var(--secondary-text-color-dark-theme);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #555555;
+    background-color: transparent;
+    cursor: pointer;
+
+    padding: 0;
+    transition: border-color 250ms linear;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-close-btn-icon {
+    fill: var(--secondary-text-color-light-theme);
+    transition: fill 250ms linear;
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+    fill: var(--accent-color);
 }
