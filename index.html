@@ -362,7 +362,7 @@
       <section class="gallery section">
         <div class="container">
           <p class="overtitle overtitle-theme-light">Латинською мовою "барба" означає "борода"</p>
-          <h2 hidden>галерея</h2>
+          <h2 class="visually-hidden">галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-list-item">
               <img
@@ -408,16 +408,54 @@
 
       <!-- START CONTACT DARK THEME -->
 
-      <div class="contact section">
+      <div class="contact">
         <!-- CONTACT -->
         <div class="container contact-container">
-          <section class="contact-form-section">
+          <section class="contact-form-section section">
             <h2 class="title title-theme-dark">Онлайн-запис</h2>
-            <button class="modal-btn" type="button">відправити</button>
+
+            <form class="contact-form">
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <input
+                    name="user_name"
+                    type="text"
+                    class="contact-form-input"
+                    placeholder="Ім’я*"
+                    required
+                  />
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <input
+                    name="user_phone"
+                    type="tel"
+                    class="contact-form-input"
+                    placeholder="Телефон*"
+                    required
+                  />
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <textarea
+                    name="user_message"
+                    class="contact-form-message"
+                    placeholder="Повідомлення"
+                  ></textarea>
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+
+              <button class="modal-btn" type="submit">відправити</button>
+            </form>
           </section>
 
           <!-- CONTACT INFORMATION -->
-          <section class="contact-info-section" id="contacts">
+          <section class="contact-info-section section" id="contacts">
             <h2 class="title title-theme-dark">Контакти</h2>
             <address class="address">
               <ul class="contact-list list">
@@ -431,7 +469,8 @@
                     <svg class="contact-list-icon" width="16" height="18">
                       <use href="./images/sprite.svg#map-pin"></use>
                     </svg>
-                    вул. Василькова, 7А Київ, 08132
+                    вул. Василькова, 7А <br />
+                    Київ, 08132
                   </a>
                 </li>
                 <li class="contact-list-item">
@@ -488,6 +527,51 @@
             <use href="./images/sprite.svg#close-icon"></use>
           </svg>
         </button>
+
+        <form class="contact-form-header">
+          <label class="contact-form-field-header">
+            Ім’я*
+            <span class="contact-form-input-wrapper-header">
+              <input name="user_name" class="contact-form-input-header" type="text" required />
+              <span class="contact-form-icon-header"></span>
+            </span>
+          </label>
+
+          <label class="contact-form-field-header">
+            Телефон*
+            <span class="contact-form-input-wrapper-header">
+              <input name="user_phone" class="contact-form-input-header" type="tel" required />
+              <span class="contact-form-icon-header"></span>
+            </span>
+          </label>
+
+          <label class="contact-form-field-header">
+            Повідомлення
+            <textarea
+              name="user_message"
+              class="contact-form-message-header"
+              placeholder="Повідомлення"
+            ></textarea>
+          </label>
+
+          <div class="contact-form-checkbox-wrapper-header">
+            <input
+              name="accept-policy"
+              type="checkbox"
+              class="contact-form-checkbox-header visually-hidden"
+              id="policy-checkbox"
+              required
+            />
+            <label for="policy-checkbox" class="contact-form-checkbox-label-header">
+              Погоджуюся з розсилкою та приймаю&nbsp;
+              <a href="">Умови договору</a>
+            </label>
+          </div>
+
+          <button class="contact-form-button-btn-header modal-btn btn-light-theme" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
 
