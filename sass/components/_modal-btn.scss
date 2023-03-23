@@ -1,0 +1,28 @@
+.modal-btn {
+  min-width: 160px;
+  padding: 10px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-dark-theme);
+}
+
+.btn-light-theme {
+  color: var(--secondary-text-color-light-theme);
+}
