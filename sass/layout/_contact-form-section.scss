@@ -3,16 +3,16 @@
   padding-right: 40px;
 }
 
-.contact-form-field {
+.contact-form__field {
   display: inline-block;
   margin-bottom: 44px;
 }
 
-.contact-form-field:first-child {
+.contact-form__field:first-child {
   margin-right: 30px;
 }
 
-.contact-form-input {
+.contact-form__input {
   width: 255px;
   height: 24px;
   background-color: #191c26;
@@ -20,7 +20,7 @@
   border: none;
 }
 
-.contact-form-message {
+.contact-form__message {
   width: 545px;
   height: 76px;
   resize: none;
@@ -29,8 +29,8 @@
   border: none;
 }
 
-.contact-form-input,
-.contact-form-message {
+.contact-form__input,
+.contact-form__message {
   font-family: 'Open Sans';
   font-weight: 600;
   font-size: 11px;
@@ -38,24 +38,24 @@
   letter-spacing: 0.1em;
   cursor: pointer;
 }
-.contact-form-input::placeholder,
-.contact-form-message::placeholder {
+.contact-form__input::placeholder,
+.contact-form__message::placeholder {
   color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
 }
 
-.contact-form-input:focus::placeholder,
-.contact-form-message:focus::placeholder {
+.contact-form__input:focus::placeholder,
+.contact-form__message:focus::placeholder {
   color: var(--secondary-text-color-dark-theme);
 }
 
-.contact-form-input-wrapper {
+.contact-form__input-wrapper {
   display: block;
   position: relative;
   width: 100%;
 }
 
-.contact-form-icon {
+.contact-form__icon {
   display: block;
   position: absolute;
   bottom: 0;
@@ -68,12 +68,12 @@
   transition: background-color 250ms linear;
 }
 
-.contact-form-input:focus + .contact-form-icon,
-.contact-form-message:focus + .contact-form-icon {
+.contact-form__input:focus + .contact-form__icon,
+.contact-form__message:focus + .contact-form__icon {
   background-color: var(--secondary-text-color-dark-theme);
 }
 
-.contact-form-input:focus,
-.contact-form-message:focus {
+.contact-form__input:focus,
+.contact-form__message:focus {
   outline: none;
 }

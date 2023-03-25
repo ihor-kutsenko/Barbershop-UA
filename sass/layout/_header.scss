@@ -25,11 +25,11 @@
   margin-right: 70px;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.nav-list-link {
+.nav-list__link {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -43,8 +43,8 @@
   transition: color 50ms linear;
 }
 
-.nav-list-link:focus,
-.nav-list-link:hover {
+.nav-list__link:focus,
+.nav-list__link:hover {
   color: var(--accent-color);
 }
 

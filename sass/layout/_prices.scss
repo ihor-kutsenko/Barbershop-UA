@@ -4,7 +4,7 @@
   background-color: #111319;
 }
 
-.prices .overtitle-theme-dark {
+.prices .overtitle_theme_dark {
   margin-bottom: 20px;
 }
 
@@ -26,12 +26,12 @@
   background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices-list-item {
+.prices-list__item {
   display: flex;
   justify-content: space-between;
 }
 
-.prices-list-item:not(:last-child) {
+.prices-list__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -40,8 +40,8 @@
   margin: 0 auto;
 }
 
-.prices-list-name,
-.prices-list-price {
+.prices-list__name,
+.prices-list__price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;

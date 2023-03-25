@@ -6,14 +6,14 @@
   margin-bottom: 44px;
 }
 
-.employees-list {
+.employees__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.employees-card {
+.employees__card {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -23,7 +23,7 @@
   padding-top: 30px;
 }
 
-.employees-name {
+.employees__name {
   margin-bottom: 8px;
 
   font-weight: 400;
@@ -35,7 +35,7 @@
   color: var(--secondary-text-color-light-theme);
 }
 
-.employees-position {
+.employees__position {
   margin-bottom: 30px;
 
   font-weight: 400;

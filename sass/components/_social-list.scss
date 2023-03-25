@@ -4,7 +4,7 @@
   column-gap: 10px;
 }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,17 +17,17 @@
   transition: background-color 250ms linear;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: var(--secondary-text-color-light-theme);
 }
 
-.social-list-icon {
+.social-list__icon {
   fill: var(--secondary-text-color-light-theme);
   transition: fill 250ms linear;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: var(--accent-color);
 }

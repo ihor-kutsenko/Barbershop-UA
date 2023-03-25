@@ -1,9 +1,9 @@
-.contact-form-field-header {
+.contact-form__field-header {
   display: block;
   margin-bottom: 10px;
 }
 
-.contact-form-input-header {
+.contact-form__input-header {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -14,16 +14,16 @@
   transition: border-color 250ms linear;
 }
 
-.contact-form-input-header:focus {
+.contact-form__input-header:focus {
   outline: none;
   border-color: #ff6c00;
 }
 
-.contact-form-input-header:focus + .contact-form-icon-header {
+.contact-form__input-header:focus + .contact-form__icon-header {
   background-color: var(--accent-color);
 }
 
-.contact-form-icon-header {
+.contact-form__icon-header {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -36,13 +36,13 @@
   transition: background-color 250ms linear;
 }
 
-.contact-form-input-wrapper-header {
+.contact-form__input-wrapper-header {
   display: block;
   position: relative;
   margin-top: 6px;
 }
 
-.contact-form-message-header {
+.contact-form__message-header {
   width: 100%;
   height: 100px;
   margin-top: 6px;
@@ -55,26 +55,26 @@
   transition: border-color 250ms linear;
 }
 
-.contact-form-message-header:focus {
+.contact-form__message-header:focus {
   outline: none;
   border-color: #ff6c00;
 }
 
-.contact-form-message-header::placeholder {
+.contact-form__message-header::placeholder {
   text-transform: uppercase;
 }
 
-.contact-form-checkbox-wrapper-header {
+.contact-form__checkbox-wrapper-header {
   margin-bottom: 20px;
 }
 
-.contact-form-checkbox-label-header {
+.contact-form__checkbox-label-header {
   display: flex;
   align-items: center;
   font-size: 14px;
 }
 
-.contact-form-checkbox-label-header::before {
+.contact-form__checkbox-label-header::before {
   display: inline-block;
 
   margin-right: 10px;
@@ -85,16 +85,16 @@
   cursor: pointer;
 }
 
-.contact-form-checkbox-header:checked + .contact-form-checkbox-label-header::before {
+.contact-form__checkbox-header:checked + .contact-form__checkbox-label-header::before {
   background-color: #ff6c00;
   box-shadow: inset 0 0 0 2px #ffffff;
 }
 
-.contact-form-checkbox-header:focus + .contact-form-checkbox-label-header::before {
+.contact-form__checkbox-header:focus + .contact-form__checkbox-label-header::before {
   outline: 1px solid #000099;
 }
 
-.contact-form-button-btn-header {
+.contact-form__button-btn-header {
   display: block;
   margin: 0 auto;
 }

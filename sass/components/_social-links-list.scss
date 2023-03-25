@@ -14,11 +14,11 @@
   background-color: var(--secondary-text-color-light-theme);
 }
 
-.social-links-list-item:not(:last-child) {
+.social-links-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.social-links-list-link {
+.social-links-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -29,7 +29,7 @@
   transition: color 250ms linear;
 }
 
-.social-links-list-link:hover,
-.social-links-list-link:focus {
+.social-links-list__link:hover,
+.social-links-list__link:focus {
   color: var(--accent-color);
 }

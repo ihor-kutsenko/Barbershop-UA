@@ -10,11 +10,11 @@
   text-transform: uppercase;
 }
 
-.overtitle-theme-dark {
+.overtitle_theme_dark {
   color: var(--third-text-color-dark-theme);
 }
 
-.overtitle-theme-light {
+.overtitle_theme_light {
   color: var(--secondary-text-color-light-theme);
 }
 
@@ -25,10 +25,10 @@
   margin-right: 20px;
 }
 
-.overtitle-theme-dark::before {
+.overtitle_theme_dark::before {
   background-color: var(--third-text-color-dark-theme);
 }
 
-.overtitle-theme-light::before {
+.overtitle_theme_light::before {
   background-color: var(--secondary-text-color-light-theme);
 }

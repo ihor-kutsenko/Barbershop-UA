@@ -1,4 +1,4 @@
-.contact-info-section .title-theme-dark {
+.contact-info-section .title_theme_dark {
   margin-bottom: 40px;
 }
 .contact-info-section {
@@ -10,7 +10,7 @@ address {
   font-style: normal;
 }
 
-.contact-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -19,16 +19,16 @@ address {
   flex-direction: column;
 }
 
-.contact-list-item {
+.contact-list__item {
   align-items: center;
   justify-content: center;
 }
 
-.contact-list-icon {
+.contact-list__icon {
   margin-right: 16px;
 }
 
-.contact-list-link {
+.contact-list__link {
   display: flex;
   align-items: center;
 
@@ -40,25 +40,25 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
-.contact-list-link:hover .contact-list-icon,
-.contact-list-link:focus .contact-list-icon {
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
   fill: var(--accent-color);
 }
 
-.contact-list-link:hover,
-.contact-list-link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--accent-color);
 }
 
-.contact-text {
+.contact-info__text {
   color: var(--secondary-text-color-dark-theme);
 }
 
-.contact-info-section .contact-text {
+.contact-info-section .contact-info__text {
   margin: 70px auto 20px;
 }
 
-.contact-info-date {
+.contact-info__date {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
