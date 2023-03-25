@@ -17,9 +17,6 @@
   margin: 0 auto;
 }
 .advantages-list__quantity {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 6px;
 
   font-weight: 700;
@@ -33,8 +30,6 @@
 
 .advantages-list__text {
   font-weight: 600;
-  font-size: 22px;
-  line-height: 1.38;
   color: var(--accent-color);
 }
 

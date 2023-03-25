@@ -560,9 +560,6 @@ img {
 }
 
 .advantages-list__quantity {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 6px;
   font-weight: 700;
   font-size: 42px;
@@ -574,8 +571,6 @@ img {
 
 .advantages-list__text {
   font-weight: 600;
-  font-size: 22px;
-  line-height: 1.38;
   color: var(--accent-color);
 }
 
