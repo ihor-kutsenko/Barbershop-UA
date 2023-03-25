@@ -1,17 +1,14 @@
-.contact-info-section .title_theme_dark {
-  margin-bottom: 40px;
-}
 .contact-info-section {
   width: 50%;
   padding-left: 100px;
+
+  & .title_theme_dark {
+    margin-bottom: 40px;
+  }
 }
 
 address {
   font-style: normal;
-}
-
-.contact-list__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .contact-list {
@@ -22,10 +19,19 @@ address {
 .contact-list__item {
   align-items: center;
   justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-list__icon {
   margin-right: 16px;
+
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .contact-list__link {
@@ -38,24 +44,19 @@ address {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-dark-theme);
-}
 
-.contact-list__link:hover .contact-list__icon,
-.contact-list__link:focus .contact-list__icon {
-  fill: var(--accent-color);
-}
-
-.contact-list__link:hover,
-.contact-list__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-info__text {
   color: var(--secondary-text-color-dark-theme);
-}
 
-.contact-info-section .contact-info__text {
-  margin: 70px auto 20px;
+  .contact-info-section & {
+    margin: 70px auto 20px;
+  }
 }
 
 .contact-info__date {

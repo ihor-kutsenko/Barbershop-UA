@@ -41,11 +41,11 @@
   color: var(--secondary-text-color-dark-theme);
 
   transition: color 50ms linear;
-}
 
-.nav-list__link:focus,
-.nav-list__link:hover {
-  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .contact-number {
@@ -60,9 +60,9 @@
   color: var(--secondary-text-color-dark-theme);
 
   transition: color 250ms linear;
-}
 
-.contact-number:focus,
-.contact-number:hover {
-  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }

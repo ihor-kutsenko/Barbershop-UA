@@ -17,6 +17,9 @@
   margin: 0 auto;
 }
 .advantages-list__quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 6px;
 
   font-weight: 700;
@@ -26,6 +29,13 @@
   letter-spacing: 0.05em;
 
   color: var(--secondary-text-color-light-theme);
+}
+
+.advantages-list__text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.38;
+  color: var(--accent-color);
 }
 
 .advantages-list__description {
@@ -43,10 +53,10 @@
   width: 170px;
   min-height: 133px;
   background-color: var(--old-school-backgrond-color);
-}
 
-.advantages-list__item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .advantages-description,

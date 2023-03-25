@@ -15,12 +15,12 @@
   color: #ffffff;
 
   transition: color 250ms linear, background-color 250ms linear;
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color-dark-theme);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-dark-theme);
+  }
 }
 
 .btn_light_theme {

@@ -15,19 +15,19 @@
   background-color: var(--secondary-text-color-dark-theme);
 
   transition: background-color 250ms linear;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--secondary-text-color-light-theme);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-text-color-light-theme);
+  }
 }
 
 .social-list__icon {
   fill: var(--secondary-text-color-light-theme);
   transition: fill 250ms linear;
-}
 
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--accent-color);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--accent-color);
+  }
 }

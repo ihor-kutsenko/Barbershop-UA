@@ -1,17 +1,17 @@
 .social-links-list {
   display: flex;
   align-items: center;
-}
 
-.social-links-list::before {
-  display: block;
-  flex-shrink: 0;
-  margin-right: 40px;
+  &::before {
+    display: block;
+    flex-shrink: 0;
+    margin-right: 40px;
 
-  content: '';
-  width: 60px;
-  height: 1px;
-  background-color: var(--secondary-text-color-light-theme);
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-text-color-light-theme);
+  }
 }
 
 .social-links-list__item:not(:last-child) {
@@ -27,9 +27,9 @@
   color: var(--secondary-text-color-light-theme);
 
   transition: color 250ms linear;
-}
 
-.social-links-list__link:hover,
-.social-links-list__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

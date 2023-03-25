@@ -29,19 +29,19 @@
 
   padding: 0;
   transition: border-color 250ms linear;
-}
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-close-btn__icon {
   fill: var(--secondary-text-color-light-theme);
   transition: fill 250ms linear;
-}
 
-.modal-close-btn:hover .modal-close-btn__icon,
-.modal-close-btn:focus .modal-close-btn__icon {
-  fill: var(--accent-color);
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
