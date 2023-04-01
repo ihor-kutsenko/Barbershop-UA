@@ -1,3 +1,7 @@
+body {
+  font-family: var(--primary-font-family);
+}
+
 .list {
   list-style: none;
 }
@@ -8,10 +12,6 @@
 
 button {
   cursor: pointer;
-}
-
-body {
-  font-family: var(--primary-font-family);
 }
 
 h1,
@@ -32,4 +32,8 @@ ol {
 
 img {
   display: block;
+}
+
+address {
+  font-style: normal;
 }

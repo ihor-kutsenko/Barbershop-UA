@@ -8,31 +8,18 @@
   }
 }
 
-.prices-container {
-  display: flex;
-}
-
-.prices-list {
-  flex-basis: 50%;
-  padding: 30px 40px;
-  margin-bottom: 50px;
-
-  &:first-child {
-    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  }
-
-  &:last-child {
-    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-  }
-}
-
 .prices-list__item {
   display: flex;
   justify-content: space-between;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+.prices-list__name,
+.prices-list__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
 }
 
 .prices .modal-btn {
@@ -40,12 +27,69 @@
   margin: 0 auto;
 }
 
-.prices-list__name,
-.prices-list__price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+// 0 - 1199px
 
-  color: var(--primary-text-color-dark-theme);
+@media screen and (max-width: 1279px) {
+  .prices-container {
+    margin-bottom: 50px;
+    padding: 30px 40px;
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .prices-list__item {
+    margin-bottom: 20px;
+  }
+
+  .prices-list__last-item {
+    margin-bottom: 0;
+  }
+}
+
+// 0 - 767px
+
+@media screen and (max-width: 767px) {
+  .prices-container {
+    padding: 30px 30px;
+  }
+}
+
+// mobile 480+
+
+@media screen and (min-width: 480px) {
+}
+
+// tablet 768+
+
+@media screen and (min-width: 768px) {
+  .prices-list__name,
+  .prices-list__price {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+// destcop 1200+
+
+@media screen and (min-width: 1280px) {
+  .prices-container {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .prices-list {
+    flex-basis: 50%;
+    padding: 30px 40px;
+
+    &:first-child {
+      background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    &:last-child {
+      background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+  }
+
+  .prices-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

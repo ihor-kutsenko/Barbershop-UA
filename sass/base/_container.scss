@@ -1,7 +1,35 @@
 .container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+// mobile 480+
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// tablet 768+
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+// destcop 1200+
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }

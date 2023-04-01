@@ -11,7 +11,7 @@
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
+  cursor: pointer;
   color: #ffffff;
 
   transition: color 250ms linear, background-color 250ms linear;
@@ -25,4 +25,11 @@
 
 .btn_light_theme {
   color: var(--secondary-text-color-light-theme);
+  background-color: var(--secondary-text-color-dark-theme);
+}
+
+@media screen and (max-width: 1279px) {
+  .header__modal-btn {
+    margin-bottom: 20px;
+  }
 }

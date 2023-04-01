@@ -1,14 +1,37 @@
 .description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.6;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.description_theme_light {
+  color: var(--primary-text-color-light-theme);
 }
 
 .description_theme_dark {
   color: var(--primary-text-color-dark-theme);
 }
 
-.description_theme_light {
-  color: var(--primary-text-color-light-theme);
+.hero-right-side .description {
+  margin-bottom: 0;
+  width: 306px;
+}
+
+// tablet 768px+
+
+@media screen and (min-width: 768px) {
+  .hero-right-side .description {
+    width: 349px;
+  }
+}
+// destkop 1200px+
+
+@media screen and (min-width: 1279px) {
+  .description {
+    font-size: 18px;
+    line-height: 1.67;
+    width: 400px;
+  }
 }

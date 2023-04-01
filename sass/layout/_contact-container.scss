@@ -2,10 +2,27 @@
   background-color: #191c26;
   background-image: url(../images/contacts/bg1.png);
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 50% auto;
+  background-position: bottom;
+  background-size: auto 50%;
 }
 
-.contact-container {
-  display: flex;
+// tablet 768+
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-size: 100% 50%;
+  }
+}
+
+// destcop 1200+
+
+@media screen and (min-width: 1280px) {
+  .contact-container {
+    display: flex;
+  }
+
+  .contact {
+    background-position: right center;
+    background-size: 50% auto;
+  }
 }

@@ -5,15 +5,17 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
-
 .title_theme_light {
   margin-bottom: 20px;
-
   color: var(--secondary-text-color-light-theme);
 }
 
 .title_theme_dark {
   margin-bottom: 44px;
-
   color: var(--secondary-text-color-dark-theme);
+}
+
+.prices .title {
+  font-size: 42px;
+  line-height: 1.17;
 }

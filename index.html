@@ -24,9 +24,9 @@
   <body>
     <!--START HEADER-->
     <header class="page-header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo link" href="./index.html">
+          <a class="logo header__logo link" href="./index.html">
             <svg class="logo__img" width="68" height="54">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
@@ -46,8 +46,67 @@
             </li>
           </ul>
         </nav>
-        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button" data-modal-open>онлайн-запис</button>
+
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+
+        <div class="header__contact-info-wrapper">
+          <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="modal-btn header__modal-btn" type="button" data-modal-open>
+            онлайн-запис
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#about">Про нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#prices">Послуги та ціни</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#masters">Майстри</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+
+          <a class="mobile-menu__contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="mobile-menu__modal-btn" type="button">онлайн-запис</button>
+
+          <ul class="mobile-menu-social-links-list list">
+            <li class="mobile-menu-social-links-list__item">
+              <a
+                class="mobile-menu-social-links-list__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferer"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu-social-links-list__item">
+              <a
+                class="mobile-menu-social-links-list__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- /END HEADER -->
@@ -70,7 +129,7 @@
           <div class="hero-right-side">
             <p class="overtitle overtitle_theme_dark" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="main-title" lang="en">BarberShop</h1>
-            <p class="description description_theme_dark">
+            <p class="description description_theme_dark hero_description">
               Ми експерти у модних чоловічих стрижках.<br />
               Працюємо швидко, обережно та зі смаком.
             </p>
@@ -108,7 +167,7 @@
           <div class="about-right-side">
             <p class="overtitle overtitle_theme_light">ПРО НАС</p>
             <h2 class="title title_theme_light">Найкращий Барбершоп твого міста</h2>
-            <p class="description description_theme_light about-section-description">
+            <p class="description description_theme_light">
               Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.
             </p>
             <p class="about__text">
@@ -162,7 +221,7 @@
                 <span class="prices-list__name">Дитяча стрижка (до 12 років)</span>
                 <span class="prices-list__price">від 300 грн.</span>
               </li>
-              <li class="prices-list__item">
+              <li class="prices-list__item prices-list__last-item">
                 <span class="prices-list__name">Камуфлювання сивини</span>
                 <span class="prices-list__price">від 200 грн.</span>
               </li>
@@ -498,9 +557,11 @@
                   </a>
                 </li>
               </ul>
+              <div class="contact-info__wrapper">
+                <p class="contact-info__text overtitle overtitle_theme_dark">години роботи</p>
+                <p class="contact-info__date">Щоденно з 9:00 до 22:00</p>
+              </div>
             </address>
-            <p class="contact-info__text overtitle overtitle_theme_dark">години роботи</p>
-            <p class="contact-info__date">Щоденно з 9:00 до 22:00</p>
           </section>
         </div>
       </div>
@@ -584,5 +645,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
