@@ -1,16 +1,29 @@
 .contact {
   background-color: #191c26;
-  background-image: url(../images/contacts/bg1.png);
+  background-image: url(../images/contacts/bg1-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto 50%;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contact {
+    background-image: url(../images/contacts/bg1-mobile@2x.png);
+  }
 }
 
 // tablet 768+
 
 @media screen and (min-width: 768px) {
   .contact {
-    background-size: 100% 50%;
+    background-image: url(../images/contacts/bg1-tablet.png);
+    // background-size: auto 50%;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contact {
+      background-image: url(../images/contacts/bg1-tablet@2x.png);
+    }
   }
 }
 
@@ -22,7 +35,14 @@
   }
 
   .contact {
+    background-image: url(../images/contacts/bg1-desktop.png);
     background-position: right center;
     background-size: 50% auto;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contact {
+      background-image: url(../images/contacts/bg1-desktop@2x.png);
+    }
   }
 }
