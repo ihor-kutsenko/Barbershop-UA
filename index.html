@@ -116,7 +116,7 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
-            <ul class="social-links-list social-links-list-hero list">
+            <ul class="social-links-list social-links-list__hero list">
               <li class="social-links-list__item">
                 <a class="social-links-list__link link" href="" lang="en">Instagram</a>
               </li>
@@ -144,22 +144,44 @@
           <div class="about-left-side">
             <ul class="about-gallery__list list">
               <li class="about-gallery__item">
-                <img
-                  class="about-gallery__photo"
-                  src="./images/about/about1.jpg"
-                  alt="майстер голить шию клієнту"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/about/about1-desktop.jpg    1x,
+                      ./images/about/about1-desktop@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about1-tablet.jpg    1x,
+                      ./images/about/about1-tablet@2x.jpg 2x
+                    " />
+                  <img
+                    class="about-gallery__photo"
+                    src="./images/about/about1.jpg"
+                    alt="майстер голить шию клієнту"
+                /></picture>
               </li>
               <li class="about-gallery__item">
-                <img
-                  class="about-gallery__photo"
-                  src="./images/about/about2.jpg"
-                  alt="майстер підстригає клєнта"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/about/about2-desktop.jpg    1x,
+                      ./images/about/about2-desktop@2x.jpg 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about2-tablet.jpg    1x,
+                      ./images/about/about2-tablet@2x.jpg 2x
+                    " />
+                  <img
+                    class="about-gallery__photo"
+                    src="./images/about/about2.jpg"
+                    alt="майстер підстригає клєнта"
+                /></picture>
               </li>
             </ul>
           </div>
@@ -284,15 +306,33 @@
         <div class="container">
           <p class="overtitle overtitle_theme_light">для справжніх шанувальників атмосфери</p>
           <h2 class="title title_theme_light">Наші майстри</h2>
+
           <ul class="employees__list list">
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/masters/master1.jpg"
-                alt="майстер стриже клієнта"
-                width="370"
-                height="346"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master1-desktop.jpg    1x,
+                    ./images/masters/master1-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master1-tablet.jpg    1x,
+                    ./images/masters/master1-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/masters/master1-mobile.jpg    1x,
+                    ./images/masters/master1-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/masters/master1.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
 
               <div class="employees-container">
                 <h3 class="employees__name" lang="en">John Smith</h3>
@@ -331,13 +371,30 @@
             </li>
 
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/masters/master2.jpg"
-                alt="майстер стриже клієнта"
-                width="370"
-                height="346"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master2-desktop.jpg    1x,
+                    ./images/masters/master2-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master2-tablet.jpg    1x,
+                    ./images/masters/master2-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/masters/master2-mobile.jpg    1x,
+                    ./images/masters/master2-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/masters/master2.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
 
               <div class="employees-container">
                 <h3 class="employees__name" lang="en">Michele Doe</h3>
@@ -376,13 +433,30 @@
             </li>
 
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/masters/master3.jpg"
-                alt="майстер стриже клієнта"
-                width="370"
-                height="346"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master3-desktop.jpg    1x,
+                    ./images/masters/master3-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master3-tablet.jpg    1x,
+                    ./images/masters/master3-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/masters/master3-mobile.jpg    1x,
+                    ./images/masters/master3-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/masters/master3.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
 
               <div class="employees-container">
                 <h3 class="employees__name" lang="en">Alan Black</h3>
@@ -432,40 +506,108 @@
           <h2 class="visually-hidden">галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-list__item">
-              <img
-                class="gallery-list__photo"
-                src="./images/gallery/barba1.jpg"
-                alt="майстер стриже клієнта"
-                width="270"
-                height="360"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery/barba1-desktop.jpg    1x,
+                    ./images/gallery/barba1-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/barba1-tablet.jpg    1x,
+                    ./images/gallery/barba1-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/barba1-mobile.jpg    1x,
+                    ./images/gallery/barba1-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="gallery-list__photo"
+                  src="./images/gallery/barba1.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
             </li>
             <li class="gallery-list__item">
-              <img
-                class="gallery-list__photo"
-                src="./images/gallery/barba2.jpg"
-                alt="майстер стриже клієнта"
-                width="270"
-                height="360"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery/barba2-desktop.jpg    1x,
+                    ./images/gallery/barba2-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/barba2-tablet.jpg    1x,
+                    ./images/gallery/barba2-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/barba2-mobile.jpg    1x,
+                    ./images/gallery/barba2-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="gallery-list__photo"
+                  src="./images/gallery/barba2.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
             </li>
             <li class="gallery-list__item">
-              <img
-                class="gallery-list__photo"
-                src="./images/gallery/barba3.jpg"
-                alt="майстер стриже клієнта"
-                width="270"
-                height="360"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery/barba3-desktop.jpg    1x,
+                    ./images/gallery/barba3-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/barba3-tablet.jpg    1x,
+                    ./images/gallery/barba3-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/barba3-mobile.jpg    1x,
+                    ./images/gallery/barba3-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="gallery-list__photo"
+                  src="./images/gallery/barba3.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
             </li>
             <li class="gallery-list__item">
-              <img
-                class="gallery-list__photo"
-                src="./images/gallery/barba4.jpg"
-                alt="майстер стриже клієнта"
-                width="270"
-                height="360"
-              />
+              <picture
+                ><source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery/barba4-desktop.jpg    1x,
+                    ./images/gallery/barba4-desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery/barba4-tablet.jpg    1x,
+                    ./images/gallery/barba4-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery/barba4-mobile.jpg    1x,
+                    ./images/gallery/barba4-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="gallery-list__photo"
+                  src="./images/gallery/barba4.jpg"
+                  alt="майстер стриже клієнта"
+              /></picture>
             </li>
           </ul>
         </div>

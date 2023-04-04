@@ -19,6 +19,9 @@
     font-size: 28px;
     line-height: 1.18;
   }
+  .about-gallery__list {
+    flex-direction: column;
+  }
 }
 
 // 0 - 767px
@@ -36,22 +39,26 @@
     display: flex;
     justify-content: space-between;
   }
-
+  .about-left-side,
   .about-right-side {
-    padding-left: 34px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .about__text {
+    margin-bottom: 55px;
   }
 }
 
 // destkop 1200px+
 
 @media screen and (min-width: 1280px) {
-  .about-left-side,
-  .about-right-side {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-
   .about-gallery__list {
     display: flex;
     justify-content: space-between;
+  }
+  .about-right-side {
+    padding-left: 34px;
+  }
+  .about__text {
+    margin-bottom: 70px;
   }
 }

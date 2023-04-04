@@ -38,33 +38,9 @@
   .employees__card:not(:last-child) {
     margin-bottom: 64px;
   }
-
-  .employees__photo {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    // late delete------------------------------------------------
-  }
-}
-
-// 0 - 767px
-
-@media screen and (max-width: 767px) {
-  .employees__photo {
-    width: 418px;
-    // late delete------------------------------------------------
-  }
 }
 
 // mobile 480+
-
-@media screen and (min-width: 480px) {
-}
-
-// tablet 768+
-
-@media screen and (min-width: 768px) {
-}
 
 // destcop 1200+
 
