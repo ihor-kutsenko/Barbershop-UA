@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
@@ -465,18 +466,21 @@ address {
   padding: 0;
   transition: border-color 250ms linear;
 }
-.modal-close-btn:hover, .modal-close-btn:focus {
-  border-color: var(--accent-color);
-}
 
 .modal-close-btn__icon {
   fill: var(--secondary-text-color-light-theme);
   transition: fill 250ms linear;
 }
-.modal-close-btn:hover .modal-close-btn__icon, .modal-close-btn:focus .modal-close-btn__icon {
-  fill: var(--accent-color);
-}
 
+/* Адаптація під мобільні пристрої до 768 пікселів */
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    height: auto;
+    max-height: 90%;
+    max-width: 90%;
+  }
+}
 .contact-form__field-header {
   display: block;
   margin-bottom: 10px;
